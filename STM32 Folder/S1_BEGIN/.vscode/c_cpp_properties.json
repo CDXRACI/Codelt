@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "name": "STM32",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "USE_HAL_DRIVER",
+                "STM32F411RE"
+            ],
+            "compilerPath": "${env:GCC_ARM_X}/arm-none-eabi-gcc.exe",
+            "compilerArgs": [
+                "-mcpu=cortrx-m4",
+                "-mthumb",
+                "-mfloat-abi=hard"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-arm",
+            "configurationProvider": "ms-vscode.makefile-tools"
+        }
+    ],
+    "version": 4
+}
